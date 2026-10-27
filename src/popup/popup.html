@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kick Chat Filter</title><link rel="stylesheet" href="popup.css"></head>
+<body>
+<header><img class="brand" src="../../assets/icons/logo.svg" width="40" height="40" alt="" aria-hidden="true"><div class="header-copy"><h1 data-i18n="title"></h1><p data-i18n="subtitle"></p></div><div class="header-actions"><button id="language" class="language-toggle" type="button" role="switch" aria-checked="false" aria-label="Language: Türkçe" disabled><span class="en" lang="en">EN</span><span class="tr" lang="tr">TR</span></button><button id="settings-button" class="settings-button" type="button" aria-label="Settings" data-i18n-aria="settings" aria-expanded="false" aria-controls="settings-panel"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9.5 3-.6 2.1-2 .9-2-.6-2.5 4.2 1.5 1.6v2l-1.5 1.6 2.5 4.2 2-.6 2 .9.6 2.1h5l.6-2.1 2-.9 2 .6 2.5-4.2-1.5-1.6v-2l1.5-1.6L19.1 5l-2 .6-2-.9L14.5 3Z"/><circle cx="12" cy="12" r="3"/></svg></button></div></header>
+<main>
+<section id="home-panel">
+<label class="toggle"><span data-i18n="enabled"></span><input id="enabled" type="checkbox" role="switch" disabled></label>
+<form id="add-form"><label for="term" data-i18n="termLabel"></label><div class="input-row"><input id="term" type="text" autocomplete="off" aria-describedby="feedback" disabled><button id="add" type="submit" data-i18n="add" disabled></button></div></form>
+<section aria-labelledby="terms-heading"><h2 id="terms-heading" data-i18n="terms"></h2><p id="empty" data-i18n="empty"></p><ul id="terms"></ul></section>
+</section>
+<section id="settings-panel" aria-labelledby="settings-heading" hidden>
+<h2 id="settings-heading" data-i18n="settings"></h2>
+<label for="mode" data-i18n="mode"></label><select id="mode" disabled><option value="substring" data-i18n="substring"></option><option value="whole-word" data-i18n="wholeWord"></option></select>
+<section class="status" aria-label="Chat status" data-i18n-aria="chatStatus"><p id="context"></p><p id="count"></p></section>
+<footer><p data-i18n="local"></p><p class="preview" data-i18n="validation"></p></footer>
+</section>
+<p id="feedback" role="status" aria-live="polite"></p>
+</main>
+<script src="../shared/normalization.js"></script><script src="../shared/matcher.js"></script><script src="../shared/settings.js"></script><script src="../shared/strings.js"></script><script src="popup.js"></script>
+</body></html>

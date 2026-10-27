@@ -1,0 +1,4 @@
+/* Only verified individual virtual rows receive this extension-owned marker. */
+#chatroom-messages[data-testid="chatroom-messages"] > div.no-scrollbar.relative > div[data-index][data-kcf-hidden="1"] {
+  display: none !important;
+}
