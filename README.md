@@ -4,6 +4,14 @@ A small Manifest V3 extension that hides Kick chat rows when their **message bod
 
 **Release status:** live DOM selectors and basic installed Chrome filtering have been verified on 2026-10-27. This is a preview, not a completed v1 acceptance release. Exact live `Ahmet bugün yayında mı?`, browser-restart persistence, extended scroll/traffic/layout coverage and Firefox still need verification. See [validation](docs/VALIDATION.md) and [selector evidence](docs/PHASE_A.md).
 
+## Screenshots
+
+The popup lets you manage blocked words and phrases, toggle filtering, and switch between English and Turkish. Settings include the matching mode and the current tab's hidden-message count.
+
+| Main popup | Settings |
+| --- | --- |
+| <img src="ui1.png" alt="Main popup with filtering toggle and blocked phrase entry" width="360"> | <img src="ui2.png" alt="Settings with matching mode, chat status and hidden-message count" width="360"> |
+
 ## Install in Chrome / Chromium
 
 1. Open `chrome://extensions` and enable Developer mode.
